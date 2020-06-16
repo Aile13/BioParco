@@ -1,0 +1,8 @@
+
+
+-- 1 -- 
+
+chiamo cliccando la frase una pagina php che fa il logout agli eventuali account loccati.
+
+devi sistemare il sito e cambiare tutti i percorsi che hanno a che fare con "account" poichè per far pulizia
+hai spostato tutti quelli in una cartella "account_file".

@@ -1,0 +1,110 @@
+
+
+// per modificare la riga di una tabella
+
+UPDATE nome_tabella
+SET nomeColonna = <valore1> [,nomeCampoX = <valoreX>]*
+[ WHERE predicato ]
+
+
+<!-- 
+UPDATE viaggi
+SET citta_partenza = 'Brescia'
+WHERE id_viaggio < 20
+
+
+UPDATE viaggi
+SET citta_partenza = 'Milano'
+WHERE id_viaggio > 20
+AND id_viaggio < 40
+
+
+UPDATE viaggi
+SET data_partenza = '2018-11-16'
+WHERE id_viaggio IN('1', '5', '12', '16', '25', '34', '48', '41')
+
+UPDATE viaggi
+SET data_partenza = '2018-06-10'
+WHERE id_viaggio IN('2', '3', '11', '15', '23', '33', '47', '40')
+
+UPDATE viaggi
+SET ora_partenza = '10:30:00'
+WHERE id_viaggio IN('45', '51', '10', '14', '22', '32', '46', '39')
+
+UPDATE viaggi
+SET ora_partenza = '12:30:00'
+WHERE id_viaggio IN('2', '3', '11', '15', '23', '33', '47', '40')
+
+
+UPDATE 'viaggi'
+set citta_partenza = 'Bresci'
+WHERE citta_partenza like 'B%' // significa che iniziano con la "B". like significa se inizia 
+con B e poi c'è una qualsiasi altra successione di caratteri. (esempio. '%A%'.. significa basta che sia presente
+una a)
+
+INSERT into 'viaggi' (id_viaggio, citta_partenza, citta_destinazione, data_partenza, id_autista)
+values (501, 'Bologna', 'Milano', '2020-02-21', 1)
+
+
+// per creare tabella...
+create table TEMP
+(id int(5) not null,
+descrizione varchar(10),
+constraint tempKey primary key (id))
+
+
+// alter table, succede di attivare successivamente le chiavi primarie. di solito si usa altertable. se è
+// l'inizio uso drop e basta
+
+drop table, delete table, truncate
+
+fare in modo che se elimino righe associate ad altre tabelle me lo notifichi
+
+// esempio che dovrebbe dare errore
+delete from autisti
+where identificativo = 1
+
+in una vista non posso inserire righe, in una tabella si. la vista ha le colonne specificate non altre..
+
+sito icone w3school: https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
+
+SELECT *
+FROM viaggi
+WHERE citta_partenza like 'Bo%'
+
+-->
+
+<-------------------------------MODIFICHE AL DATABASE ORIGINALE "carpooling" ------------------------------------->
+
+UPDATE viaggi
+SET citta_partenza = 'Bologna'
+WHERE citta_partenza like 'Bo%'
+
+UPDATE viaggi
+SET citta_partenza = 'Bari'
+WHERE citta_partenza like 'Ba%'
+
+UPDATE viaggi
+SET citta_partenza = 'Ancona'
+WHERE citta_partenza like 'A%'
+
+UPDATE viaggi
+SET citta_destinazione = 'Padova'
+WHERE citta_destinazione like 'P%'
+
+analogo procedimento con "Gardone", "Darfo", "Cagliari"..
+
+UPDATE viaggi
+SET id_autista = '1'
+WHERE id_viaggio > 0
+AND id_viaggio < 20
+
+UPDATE viaggi
+SET id_autista = '10'
+WHERE id_viaggio > 450
+AND id_viaggio < 660
+
+
+
+
+
