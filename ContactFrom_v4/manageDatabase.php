@@ -121,7 +121,7 @@
     
     <div class="container-contact100" style="padding-left: 230px;">	
         <span class="contact100-form-title">
-            Manage database in progress!
+            This page is in progress!
         </span>				
 
 

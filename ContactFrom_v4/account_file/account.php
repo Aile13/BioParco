@@ -79,7 +79,7 @@
 
 	<!------------------------------------ Icon Bar (Sidebar - hidden on small screens) ------------------------->
 	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-		<a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../index.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-home w3-xxlarge"></i>
 			<p>HOME</p>
 		</a>
@@ -100,27 +100,27 @@
 				echo '</a>';
 			}
 		?>		
-		<a href="index_prenota.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../index_prenota.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-eye w3-xxlarge"></i>
 			<p>SORVEGLIANZA REMOTA</p>
 		</a>
-		<a href="manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>PROGRAMMA CONTROLLI</p>
 		</a>
-		<a href="manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>CARTELLE CLINICHE</p>
 		</a>
-		<a href="manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>CREA REPORT</p>
 		</a>
-		<a href="manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>GESTISCI DEVICE</p>
 		</a>
-		<a href="account_file\create_account_autista.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="../account_file\create_account_autista.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>GESTISCI ANIMALI</p>
 		</a>
