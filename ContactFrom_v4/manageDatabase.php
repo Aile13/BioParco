@@ -98,7 +98,7 @@
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>GESTISCI DEVICE</p>
 		</a>
-		<a href="manageDatabase.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
+		<a href="account_file\create_account_autista.php" class="w3-bar-item w3-button w3-padding-large w3-hover-purple">
 			<i class="fa fa-database w3-xxlarge"></i>
 			<p>GESTISCI ANIMALI</p>
 		</a>
